@@ -18,5 +18,8 @@ public class LocationServiceImpl implements LocationService{
     public List<LocationEntity> getall(){
         return LocationRepo.findAll();
     }
-    
+    @Override
+    public List<LocationEntity> getalllocation() {
+        throw new UnsupportedOperationException("Unimplemented method 'getalllocation'");
+    }
 }
