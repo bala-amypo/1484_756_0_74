@@ -1,11 +1,11 @@
-package com.example.demo1.service;
+package com.example.demo.service;
 
 import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.example.demo1.entity.LocationEntity;
-import com.example.demo1.repository.LocationRepository;
+import com.example.demo.entity.LocationEntity;
+import com.example.demo.repository.LocationRepository;
 
 public class LocationServiceImpl implements LocationService{
     @Autowired
