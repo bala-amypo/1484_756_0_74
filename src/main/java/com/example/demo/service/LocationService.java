@@ -1,22 +1,12 @@
+
 package com.example.demo.service;
-
-import java.util.List;
-
-import org.springframework.stereotype.Service;
-
+import java.util.*;
 import com.example.demo.entity.LocationEntity;
-import com.example.demo.repository.LocationRepository;
 
-@Service   // ⭐ REQUIRED
-public class LocationService {
+public interface LocationService {
+    LocationEntity createlocation(LocationEntity location);
 
-    private final LocationRepository locationRepository;
+    List<LocationEntity> getalllocation();
 
-    public LocationService(LocationRepository locationRepository) {
-        this.locationRepository = locationRepository;
-    }
-
-    public List<LocationEntity> findAll() {
-        return locationRepository.findAll();
-    }
+    
 }
